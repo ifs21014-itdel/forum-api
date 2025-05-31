@@ -122,7 +122,7 @@ describe('HTTP server', () => {
   });
 });
 
-describe('when GET /', () => {
+ describe('when GET /', () => {
     it('should return 200 and hello world', async () => {
       // Arrange
       const server = await createServer({});
@@ -135,5 +135,5 @@ describe('when GET /', () => {
       const responseJson = JSON.parse(response.payload);
       expect(response.statusCode).toEqual(200);
       expect(responseJson.value).toEqual('Hello world!');
-        });
+    });
   });
