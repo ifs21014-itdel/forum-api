@@ -120,9 +120,8 @@ describe('HTTP server', () => {
       owner: userId,
     });
   });
-});
 
- describe('when GET /', () => {
+  describe('when GET /', () => {
     it('should return 200 and hello world', async () => {
       // Arrange
       const server = await createServer({});
@@ -137,4 +136,7 @@ describe('HTTP server', () => {
       expect(responseJson.value).toEqual('Hello world!');
     });
   });
+ 
+});
+
  
